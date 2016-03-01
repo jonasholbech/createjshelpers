@@ -1,3 +1,6 @@
+/**
+ * Usage var ninja = Singleton.getInstance(img);
+ */
 var Singleton = (function () {
     var instance;
 
