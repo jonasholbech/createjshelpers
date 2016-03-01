@@ -3,7 +3,7 @@
         "js/polyfills.js",
         "js/Ticker.js",
         "js/Card.js",
-        {id:"s5", src:"audio/techno2.mp3"},
+        {"id":"s5", "src":"audio/techno2.mp3"},
         {"id":"settings", "src":"js/settings.json"},
         {"id":"numbersSS", "src":"js/spritesheets/numbers.json"},
         "img/number_sprite.png",

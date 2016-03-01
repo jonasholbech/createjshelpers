@@ -10,7 +10,7 @@ var Preload = {
         this.queue.on("progress", this.progress, this);
         this.queue.on("complete", callback, this.parent);
         this.queue.on("error", this.error, this);
-        this.queue.loadManifest("data/preloadManifest.json")
+        this.queue.loadManifest("data/preloadManifest.json");
         //this.queue.loadManifest({src:"js/preloadManifest.json", type:"manifest"})
     },
     error:function(e){

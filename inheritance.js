@@ -20,7 +20,7 @@ function Soldier(alignment, tile, damage) {
 
     // Initialize our Soldier-specific properties
     this.damage = damage;
-};
+}
 
 // Create a Soldier.prototype object that inherits from Unit.prototype.
 // Note: A common error here is to use "new Unit()" to create the
@@ -38,6 +38,6 @@ Soldier.prototype.move = function(){
 // Add a "sayGoodBye" method
 Soldier.prototype.sayGoodBye = function() {
     console.log("Goodbye!");
-}
+};
 //console.log(soldier1 instanceof Unit);  // true
 //console.log(soldier1 instanceof Soldier); // true

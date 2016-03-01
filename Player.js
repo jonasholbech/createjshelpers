@@ -1,20 +1,20 @@
 var Player = function (name, controller, playedPosition) {
-    console.log(playedPosition)
+    console.log(playedPosition);
     'use strict';
-    var my = {}
+    var my = {};
     var i;
     my.controller=controller;
     my.name=name;
-    my.hand=[]
-    my.deck=[]
-    my.discards=[]
+    my.hand=[];
+    my.deck=[];
+    my.discards=[];
     my.activeCard=null;
-    my.lives=10
-    my.played=[]//on table
-    my.zone=new createjs.Container()//the table in front
-    my.zone.played=new createjs.Container()
-    my.zone.hand=new createjs.Container()
-    my.zone.addChild(my.zone.played, my.zone.hand)
+    my.lives=10;
+    my.played=[];//on table
+    my.zone=new createjs.Container();//the table in front
+    my.zone.played=new createjs.Container();
+    my.zone.hand=new createjs.Container();
+    my.zone.addChild(my.zone.played, my.zone.hand);
     if(playedPosition){
         my.zone.hand.y=0;
         my.zone.played.y=200;
@@ -51,7 +51,7 @@ var Player = function (name, controller, playedPosition) {
                         x:my.hand.length*(my.controller.settings.cardWidth+my.controller.settings.cardOffset),
                         rotation:0,
                         y:0
-                    }, 500+(500*1))
+                    }, 500+(500*i))
                 my.hand.push(t)
                 console.log("drew a card")
             }

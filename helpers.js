@@ -23,19 +23,19 @@ var walk_the_DOM = function(node, func){
         walk_the_dom(node,func);
         node=node.nextSibling;
     }
-}
+};
 
 var fade = function(node){
     var level=1;
     var step=function(){
-        var hex=level.toString(16)
-        node.style.backgroundColor='#FFFF'+hex+hex
+        var hex=level.toString(16);
+        node.style.backgroundColor='#FFFF'+hex+hex;
         if(level <15){
             level+=1
-            setTimeout(step, 100)
+            setTimeout(step, 100);
         }
     };
-    setTimeout(step, 100)
+    setTimeout(step, 100);
 };
 
 //fade(document.body)
@@ -61,7 +61,7 @@ String.method('deentityfy', function(){
 
 var constructor = function(spec, my){
     //private vars, not available outside
-    var that, private="test", stuff;
+    var that, privateVar="test", stuff;
     my = my || {}
     //public
     that = {
@@ -70,7 +70,7 @@ var constructor = function(spec, my){
     }
     //public
     that.speak=function(){
-        console.log(private + this.name + " likes" + this.hobby);//what about that, private & stuff in here
+        console.log(privateVar + this.name + " likes" + this.hobby);//what about that, private & stuff in here
         
     }
     return that;

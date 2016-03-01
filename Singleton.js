@@ -5,8 +5,7 @@ var Singleton = (function () {
     var instance;
 
     function createInstance(img) {
-        var s = new createjs.Bitmap(img);
-        return s;
+        return new createjs.Bitmap(img);
     }
 
     return {

@@ -1,4 +1,6 @@
+
 var Controls ={
+
     lkd:false,
     rkd:false,
     ukd:false,
@@ -39,4 +41,4 @@ var Controls ={
                 break;
         }
     }
-}
+};
