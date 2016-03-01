@@ -5,10 +5,8 @@ var Game = {
     },
     setupGame:function(){
         this.stage.removeAllChildren();
-        this.hero = Objects.getHero();
-        Game.stage.addChild(this.hero)
-        this.enemy = Objects.getEnemy();
-        Game.stage.addChild(this.enemy)
+        this.settings = Preload.queue.getResult("settings");
+
         Controls.initialize();
         Ticker.start();
     }
