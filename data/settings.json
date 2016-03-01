@@ -1,0 +1,8 @@
+{
+  "startingCards":3,
+    "deckSize":30,
+  "numPlayers":2,
+  "cardWidth":100,
+  "cardHeight":145,
+  "cardOffset":10
+}
