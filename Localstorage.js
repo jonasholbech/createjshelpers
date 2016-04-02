@@ -31,13 +31,20 @@ var Database = {
         if(!key ){
             throw new Error('You must pass key/value to set!');
         }
-        localStorage.setItem(key, value)
+        localStorage.setItem(key, value);
     },
     delete:function(key){
         if(!key){
             throw new Error('You must pass key to delete!');
         } else {
-            localStorage.removeItem(key)
+            //TODO recursive & objects
+            if(Array.isArray(key)){
+                for(var i=0; i<key.length; i++){
+                    localStorage.removeItem(key[i]);
+                }
+            } else {
+                localStorage.removeItem(key);
+            }
         }
     },
     escape:function(item){
