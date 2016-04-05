@@ -5,6 +5,7 @@ function Timer(callback, delay) {
     this.pause = function() {
         window.clearTimeout(timerId);
         remaining -= new Date() - start;
+        return remaining;
     };
 
     this.resume = function() {
