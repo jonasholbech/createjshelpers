@@ -39,7 +39,7 @@ var Database = {
         } else {
             //TODO recursive & objects
             if(Array.isArray(key)){
-                for(var i=0; i<key.length; i++){
+                for(var i=0, len=key.length; i<len; i++){
                     localStorage.removeItem(key[i]);
                 }
             } else {
